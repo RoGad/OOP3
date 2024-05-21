@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Запись на фотосессию</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .form-container {
+            margin-top: 50px;
+            padding: 20px;
+        }
+        .form {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        .form input, .form button {
+            margin-top: 10px;
+        }
+        .container-fluid {
+            max-width: 600px;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid white;
+        }
+        #showTable {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid form-container">
+    <form action="FeedBack" method="post">
+        <div class="form">
+            <h5>Запись на фотосессию</h5>
+            <div class="mb-3">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastname" class="form-label">Фамилия</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" required>
+            </div>
+            <div class="mb-3">
+                <label for="age" class="form-label">Возраст</label>
+                <input type="tel" class="form-control" id="age" name="age" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Почта</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="telegram" class="form-label">Ник Телеграм</label>
+                <input type="text" class="form-control" id="telegram" name="telegram" required>
+            </div>
+            <div class="mb-3">
+                <label for="mobile" class="form-label">Номер телефона</label>
+                <input type="tel" class="form-control" id="mobile" name="mobile" required>
+            </div>
+            <button type="submit" value="Submit" class="btn btn-dark">Отправить</button>
+        </div>
+    </form>
+</div>
+<form action="FeedBack" method="get">
+    <div style="margin-left: 44%;margin-top: 20px;">
+        <button id="showTable" type="submit" value="Submit" class="btn btn-light">Посмотреть таблицу</button>
+    </div>
+</form>
+
+<footer>
+    &copy; 2024 Your Photography. All rights reserved.
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
